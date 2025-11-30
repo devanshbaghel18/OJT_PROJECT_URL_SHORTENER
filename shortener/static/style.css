@@ -1,0 +1,164 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+}
+
+.card, .result-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    margin-bottom: 1.5rem;
+}
+
+.url-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Fixes padding width issues */
+    margin-bottom: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.url-input:focus {
+    border-color: #764ba2;
+}
+
+.btn-shorten {
+    width: 100%;
+    padding: 15px;
+    background: #764ba2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-shorten:hover {
+    background: #5a387e;
+}
+
+.link-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.link-box a {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.btn-copy {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.qr-section img {
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* AUTHENTICAION */
+.auth-nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.user-greeting {
+    color: white;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.card.auth-card {
+    padding: 2.5rem;
+    max-width: 400px; /* Make the auth card slightly smaller */
+    margin: 0 auto;
+}
+
+/* Style the input fields rendered by {{ form.as_p }} */
+.auth-card p {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+.auth-link a {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: 600;
+}

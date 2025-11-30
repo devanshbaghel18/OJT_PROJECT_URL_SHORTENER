@@ -153,3 +153,4 @@ class ShortenerAPIView(ListCreateAPIView):
         # Generate the short code before saving the validated data
         short_code = generate_short_code()
         serializer.save(short_code=short_code)
+
